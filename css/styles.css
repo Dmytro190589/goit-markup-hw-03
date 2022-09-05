@@ -85,14 +85,15 @@ body {
 }
 
 .link-list {
+    margin-left: 93px;
     display: flex;
     font-family: var(--primary-font);
     font-size: 14px;
+   
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color-link);
-
-    margin-left: 93px;
+    
 }
 
 .link-list .link:hover,
@@ -284,8 +285,6 @@ body {
 }
 .list {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .footer {
     padding-top: 65px;
