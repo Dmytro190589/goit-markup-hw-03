@@ -333,7 +333,9 @@ body {
 .contacts-mail-tel:focus {
     color: var(--primary-text-color-theme-light);
 }
-
+.adress-list{
+    display: block;
+}
 
 /*==================== Portfolio ====================*/
 
@@ -376,6 +378,8 @@ body {
 }
 .projects-list{
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .projects-description {
     font-family: var(--primary-font);
@@ -384,13 +388,19 @@ body {
     letter-spacing: 0.03em;
     color: var(--accen-color-proj-dir);
 }
-.links {
-    padding-bottom: 9px;
-}
+
 .titlesprojects{
+    padding-top: 20px;
+    padding-bottom: 4px;
 font-family: var(--primary-font);
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--accent-color-link);
+}
+.mail {
+    text-decoration: none;
+}
+.addres-list .tif + .tif{
+    margin-top: 9px;
 }
