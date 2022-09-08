@@ -269,9 +269,7 @@ img {
 
 .team-list .boxcolor+.boxcolor {
     margin-left: 30px;
-    background-color: var(--primary-text-color-theme-dark);
-    box-shadow: 0px 1px 3px var(--accent-color-boxshadov-btn-nav3), 0px 1px 1px var(--accent-color-boxshadov-btn-nav4), 0px 2px 1px rgba(0, 0, 0, 0.2)var(--accent-color-boxshadov-btn-nav5);
-    border-radius: 0px 0px 4px 4px;
+   
 }
 
 .job-title {
