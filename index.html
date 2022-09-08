@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normolize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>WebStudio</title>
+  
 </head>
 
 <body class="body">
@@ -68,53 +69,66 @@
             </ul>
             </div>
         </section>
-        <div class="proceedings container">
-            <h2 class="work">Чим ми займаємося</h2>
-            <ul class="photo list">
-                <li class="item"><img src="./image/laptop.jpg" alt="набор тексту" width="370" height="294" /></li>
-                <li class="item"><img src="./image/telefon.jpg" alt="порівняння" width="370" height="294" /></li>
-                <li class="item"><img src="./image/planshet.jpg" alt="дізайн" width="370" height="294" /></li>
-            </ul>
-        </div>
+
+        <section class="proceedings section">
+            <div class="container">
+                <h2 class="work">Чим ми займаємося</h2>
+                <ul class="photo list">
+                    <li class="item"><img src="./image/laptop.jpg" alt="набор тексту" width="370" height="294" /></li>
+                    <li class="item"><img src="./image/telefon.jpg" alt="порівняння" width="370" height="294" /></li>
+                    <li class="item"><img src="./image/planshet.jpg" alt="дізайн" width="370" height="294" /></li>
+                </ul>
+            </div>
+        </section>
         <section class="team section">
+          <div class="container">
             <h2 class="our-team">Наша команда</h2>
-            <ul class="team-list list container">
+            <ul class="team-list list">
                 <li class="boxcolor">
                     <img src="./image/ihordemyanenko.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
-                    <h3 class="workers-name">Ігор Дем'яненко</h3>
-                    <p lang="en" class="job-title">Product Designer</p>
+                    <div class="team-wrapper">
+                        <h3 class="workers-name">Ігор Дем'яненко</h3>
+                        <p lang="en" class="job-title">Product Designer</p>
+                    </div>                  
                 </li>
                 <li class="boxcolor">
                     <img src="./image/olharepina.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+                   <div class="team-wrapper">
                     <h3 class="workers-name">Ольга Рєпіна</h3>
                     <p lang="en" class="job-title">Frontend Developer</p>
+                   </div>
                 </li>
                 <li class="boxcolor">
-                    <img src="/image/mykolatarasov.jpg" alt="Микола Тарасов" width="270" height="260" />
-                    <h3 class="workers-name">Микола Тарасов</h3>
-                    <p lang="en" class="job-title">Marketing</p>
+                    <img src="./image/mykolatarasov.jpg" alt="Микола Тарасов" width="270" height="260" />
+                    <div class="team-wrapper">
+                        <h3 class="workers-name">Микола Тарасов</h3>
+                        <p lang="en" class="job-title">Marketing</p>
+                    </div>
                 </li>
                 <li class="boxcolor">
                     <img src="./image/myhayloermakov.jpg" alt="Михайло Єрмаков" width="270" height="260" />
-                    <h3 class="workers-name">Михайло Єрмаков</h3>
-                    <p lang="en" class="job-title">UI Designer</p>
+                    <div class="team-wrapper">
+                        <h3 class="workers-name">Михайло Єрмаков</h3>
+                        <p lang="en" class="job-title">UI Designer</p>
+                    </div>
                 </li>
             </ul>
+          </div>
        </section>
     </main>
     <footer class="footer">
-         <div class=" saidbar container">
+         <div class="container">
         <a href="./index.html" class="footerlink link"><span lang="en" class="logo-blue">Web</span>Studio</a>
         <address class="address">
             <ul class="addres-list list">
-                <li class="tif">
+                <li class="footer-item">
                     <a href="https://goo.gl/maps/JDyTZf5CpsnDGQFk7" target="_blank" rel="noopener noreferrer"
                         class="location">м. Київ, пр-т Лесі Українки, 26</a>
                 </li>
-                <li class="tif">
+                <li class="footer-item">
                     <a href="mailto:info@devstudio.com" class="links mail">info@devstudio.com</a>
                 </li>
-                <li class="tif">
+                <li class="footer-item">
                     <a href="tel:+380961111111" class="link tel">+38 096 111 11 11</a>
                 </li>
             </ul>

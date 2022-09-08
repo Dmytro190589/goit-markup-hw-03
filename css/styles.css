@@ -17,8 +17,26 @@
     --accent-color-boxshadov-btn-nav4: rgba(0, 0, 0, 0.14);
     --accent-color-boxshadov-btn-nav5: rgba(0, 0, 0, 0.2);
 }
-* {
+body {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-link);
+}
+h1,h2,h3,h4,h5,h6, p {
     margin: 0;
+}
+ul,ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    height: auto;
 }
 .visually-hidden {
     position: absolute;
@@ -43,13 +61,7 @@
     margin: 0 auto;
 }
 
-body {
-    font-family: var(--primary-font);
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background-color: var(--primary-text-color-theme-dark);
-}
+
 /* -----Header---- */
 .main-header, .navigation{
     display: flex;
@@ -99,6 +111,13 @@ body {
 .link-list .link:focus {
     color: var(--primary-text-color-theme-light);
 }
+.boxcolor {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
 .mailtel {  
       margin-left: auto;
  
@@ -112,7 +131,6 @@ body {
     color: var(--accen-color-proj-dir);
 }
 .mail {
-    font-style: normal;
     color: var(--accen-color-proj-dir);
 }
 
@@ -145,20 +163,16 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
-    display: flex;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     text-align: center;
 
 }
 .hero-title {
-    font-family: var(--primary-font);
     font-size: 44px;
-    height: 120px;
     margin-left: auto;
     margin-right: auto;
     width: 696px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -167,16 +181,18 @@ body {
 
 }
 .btn-main {
-    margin-bottom: 94px;
-    background: var(--primary-text-color-theme-light);
+    padding: 10px 32px;
+    background-color: var(--primary-text-color-theme-light);
     box-shadow: 0px 4px 4px var(--accent-color-box-background);
     border-radius: 4px;
-    font-family: var(--primary-font);
+    border: none;
+    font-weight: 700;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.87;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-text-color-theme-dark);
+    cursor: pointer;
 }
 .specialists {
     display: flex;
@@ -192,34 +208,26 @@ body {
 
 
 .titles {
-    margin: 0;
-    padding-bottom: 10px;
-    font-family: var(--primary-font);
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color-link);
 
 }
 .description {
-    margin: 0;
-    font-family: var(--primary-font);
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--accen-color-proj-dir);
 
 }
 .proceedings {
-    text-align: center;
     padding-top: 0;
-    padding-bottom: 94px;
 }
 .work {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-family: var(--primary-font);
     font-size: 36px;
+    text-align: center;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--accent-color-link);
@@ -233,33 +241,30 @@ body {
     margin-left: 30px;
 }
 .team {
-    margin-bottom: 5px;
-    text-align: center;
+    background-color: var(--accent-colpr-btn-nav);
 }
 .our-team {
-    margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
-    font-family: var(--primary-font);
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(---accent-color-link);
+    color: var(--accent-color-link);
 
 }
 .workers-name {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-family: var(--primary-font);
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     color: var(--accent-color-link);
+    text-align: center;
 }
 .team-list {
     display: flex;
+}
+.team-wrapper{
+    padding: 30px 0;
+
 }
 
 .team-list .boxcolor+.boxcolor {
@@ -270,19 +275,12 @@ body {
 }
 
 .job-title {
-    margin: 0;
-    font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     color: var(--accen-color-proj-dir);
-}
+    text-align: center;}
 
 /* ===Footer---- */
-.list {
-    list-style: none;
-    padding: 0;
-}
 .footer {
     padding-top: 65px;
     padding-bottom: 60px;
@@ -292,7 +290,7 @@ body {
 
 .footerlink {
     display: block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-family: var(--secondary-font);
     font-size: 26px;
     line-height: 1.19;
@@ -302,16 +300,8 @@ body {
 }
 
 .location {
-    padding-bottom: 9px;
-    font-style:normal;
-    font-family: var(--primary-font);
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-dark);
-
-
-    text-decoration: none;
 }
 
 .location:hover,
@@ -333,24 +323,29 @@ body {
 .contacts-mail-tel:focus {
     color: var(--primary-text-color-theme-light);
 }
+.adress {
+    font-style: normal;
+}
 .adress-list{
     display: block;
 }
 
 /*==================== Portfolio ====================*/
 
-
+header{
+border-bottom: 1px solid #ECECEC;;
+}
 
 .btn-navigation {
+    padding: 6px 22px;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    width: 130px;
-    height: 38px;
+    font-weight: 500;
+    cursor: pointer;
     background: var(--accent-colpr-btn-nav);
     border-radius: 4px;
+    border: none;
 }
 
 .btn-navigation:hover,
@@ -367,7 +362,7 @@ body {
 .filters-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     
 } 
 .filters-list .item + .item {
@@ -380,6 +375,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.projects-wrapper {
+padding: 20px 24px;
+border: 1px solid #EEEEEE;
+border-top: none;
 }
 .projects-description {
     font-family: var(--primary-font);
@@ -398,9 +398,9 @@ line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--accent-color-link);
 }
-.mail {
-    text-decoration: none;
+.address {
+    font-style: normal;
 }
-.addres-list .tif + .tif{
+.addres-list .footer-item + .footer-item{
     margin-top: 9px;
 }
