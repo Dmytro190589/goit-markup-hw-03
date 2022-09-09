@@ -161,6 +161,12 @@ img {
 /* ------Main--- */
 
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(),url(../image/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--accent-color);
