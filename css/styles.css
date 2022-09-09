@@ -388,7 +388,7 @@ border-top: none;
 }
 
 .titlesprojects{
-    padding-top: 20px;
+    margin-top: 20px;
     padding-bottom: 4px;
 font-family: var(--primary-font);
 font-size: 18px;
