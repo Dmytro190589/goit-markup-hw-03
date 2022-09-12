@@ -119,10 +119,13 @@ img {
         border-radius: 0px 0px 4px 4px;
 }
 .mailtel {  
+   
       margin-left: auto;
  
    }
 .tel {
+    display: flex;
+    align-items: center;
     font-style: normal;
     font-family: var(--primary-font);
     font-size: 14px;
@@ -130,8 +133,13 @@ img {
     letter-spacing: 0.02em;
     color: var(--accen-color-proj-dir);
 }
+.head-icon{
+    margin-right: 10px;
+}
 .mail {
     color: var(--accen-color-proj-dir);
+    display: flex;
+    align-items: center;
 }
 
 .mail:hover,
@@ -145,6 +153,13 @@ img {
 .contacts {
     display: flex;
 }
+.contacts > .item {
+
+}
+.contacts .item {
+    fill: currentColor;
+}
+
 .tel:hover,
 .tel:focus {
     color: var(--primary-text-color-theme-light);
@@ -158,15 +173,18 @@ img {
     box-shadow: 0px 4px 4px var(--accent-color-box-background);
     border-radius: 4px;
 }
+
 /* ------Main--- */
 
 .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(),url(../image/hero.jpg);
-    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../image/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--accent-color);
@@ -203,11 +221,17 @@ img {
 .specialists {
     display: flex;
 }
+
 .specialists .item {
     width: 270px;
     margin-left: 30px;
 }
-
+.icon-bg {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 .specialists .item:nth-child(1) {
     margin-left: 0;
 }
@@ -277,30 +301,85 @@ img {
     margin-left: 30px;
    
 }
+.icon-link{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        margin-right: 32px;
+        margin-left: 32px;
+}
+.link-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
 
+}
+
+.link-social:hover,
+.link-social:focus {
+     color: #ffffff;
+  background-color: var(--primary-text-color-theme-light);
+}
+.link-social .icon {
+    fill: currentColor;
+}
 .job-title {
     font-size: 16px;
     line-height: 1.18;
     color: var(--accen-color-proj-dir);
     text-align: center;}
-
+.clients{
+    display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+.clients .icon {
+    fill: currentColor;
+}
 /* ===Footer---- */
 .footer {
     padding-top: 65px;
     padding-bottom: 60px;
     background: var(--accent-color);
+}
 
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
 }
 
 .footerlink {
     display: block;
     margin-bottom: 20px;
     font-family: var(--secondary-font);
+    color: var(--primary-text-color-theme-dark);
+}
+
+.footer-title {
+    text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    padding-bottom: 20px
+}
+
+.footer-link {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-dark);
-
 }
 
 .location {
@@ -408,3 +487,25 @@ color: var(--accent-color-link);
 .addres-list .footer-item + .footer-item{
     margin-top: 9px;
 }
+.footer-social{
+    display: flex;
+}
+.footer-link-socail{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social .footer-item + .footer-item {
+    margin-left: 10px;
+}
+.footer-socail-icon {
+    fill: var(--primary-text-color-theme-dark);
+}
+ .footer-link-socail:hover,
+ .footer-link-socail:focus {
+     background-color: var(--primary-text-color-theme-light);
+    }
