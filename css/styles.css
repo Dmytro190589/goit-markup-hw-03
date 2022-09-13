@@ -155,8 +155,7 @@ img {
 .contacts {
     display: flex;
 }
-.contacts > .item {
-}
+
 .contacts .item {
     fill: currentColor;
 }
@@ -346,7 +345,7 @@ img {
     background: var(--accent-color);
 }
 
-.footer__content {
+.footer-content {
     display: flex;
     flex-direction: row;
     gap: 70px;
